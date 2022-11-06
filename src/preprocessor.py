@@ -21,12 +21,16 @@ class Preprocessor():
                 pre_res.append(tmp)
                 tmp=''
                 continue
+            if char=='־':
+                tmp+=' '
+                continue
             if char.encode("UTF-8").decode("UTF-8") in char_lst:
                 tmp+=char
         res=[]
-        for i in pre_res:
-            if i not in [' ׃',' פ ',' ס ',' ']:
-                res.append(i)
+        for verse in pre_res:
+
+            if verse not in [' ׃',' פ ',' ס ',' ',' ו ']:
+                res.append(verse)
 
         with open('data/bible_books_jsons/{name}.json'.format(name=file_name), 'w',encoding="utf8") as f:
             json.dump(res, f,ensure_ascii=False)
