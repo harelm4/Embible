@@ -35,6 +35,20 @@ class Preprocessor():
         filenames = next(walk('data/bible_books'), (None, None, []))[2]  # [] if no file
         for file in filenames:
             self.text_to_json(file)
-
-   
-
+    def get_all_words_in_jsons(self):
+        pre_res=[]
+        res=[]
+        filenames = next(walk('data/bible_books'), (None, None, []))[2]  # [] if no file
+        for file_name in filenames:
+            with open('data/bible_books_jsons/{name}.json'.format(name=file_name), encoding="utf8") as f:
+                for p in f.readlines():
+                    pre_res+=p.split(' ')
+        for word in pre_res:
+            to_add=True
+            for char in word:
+                if char not in CHARS:
+                    to_add=False
+            if to_add:
+                res.append(word)
+            to_add = True
+        return res
