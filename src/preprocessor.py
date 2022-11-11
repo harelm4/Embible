@@ -29,7 +29,7 @@ class Preprocessor():
         res=[]
         for verse in pre_res:
 
-            if verse not in [' ׃',' פ ',' ס ',' ',' ו ']:
+            if verse not in [' ׃',' פ ',' ס ',' ',' ו ','ס','׀','פ',', ',' ,']:
                 res.append(verse)
 
         with open('data/bible_books_jsons/{name}.json'.format(name=file_name), 'w',encoding="utf8") as f:
@@ -56,3 +56,35 @@ class Preprocessor():
                 res.append(word)
             to_add = True
         return res
+
+    def resolveSOP(self):
+
+        filenames = next(walk('data/bible_books'), (None, None, []))[2]  # [] if no file
+        for file_name in filenames:
+            with open('data/bible_books_jsons/{name}.json'.format(name=file_name), encoding="utf8") as f:
+                new_verses = []
+                for verse in json.load(f):
+                    verse_without_unwanted=[]
+                    for word in verse.split(' '):
+                        if len(word)>1 and ',' not in word:
+                            verse_without_unwanted.append(word)
+                    new_verses.append(' '.join(verse_without_unwanted))
+
+            with open('data/bible_books_jsons/{name}.json'.format(name=file_name), 'w', encoding="utf8") as f:
+                json.dump(new_verses, f, ensure_ascii=False)
+
+
+
+def text_lst_to_lst(txt_lst):
+    verse=''
+    dont_include=['[',']','"']
+    res=[]
+    for c in txt_lst:
+        if c not in dont_include:
+            verse+=c
+        if c==',':
+            res.append(verse)
+            verse=''
+
+
+    return res
