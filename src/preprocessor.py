@@ -75,16 +75,3 @@ class Preprocessor():
 
 
 
-def text_lst_to_lst(txt_lst):
-    verse=''
-    dont_include=['[',']','"']
-    res=[]
-    for c in txt_lst:
-        if c not in dont_include:
-            verse+=c
-        if c==',':
-            res.append(verse)
-            verse=''
-
-
-    return res
