@@ -1,8 +1,7 @@
-from src.preprocessor import Preprocessor
-import json
-from os import walk
-# Preprocessor().parse_all_bible_books_to_json_lists()
+from src import UI
+import sys
 
-# Preprocessor().resolveSOP()
 
-print(len(Preprocessor().get_all_words_in_jsons()))
+win=UI.Window()
+win.showWin()
+
