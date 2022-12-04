@@ -1,7 +1,7 @@
 <!DOCTYPE html><html lang="en"><head>
   <meta charset="utf-8">
   <title>Embible</title>
-  <base href="/static/">
+  <base href="â€/static/â€">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/png" href="assets/icon.png">
   <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -12,7 +12,7 @@
 <style>.mat-typography{font:400 14px/20px Roboto,Helvetica Neue,sans-serif;letter-spacing:normal}:root{--yellow:#fed049;--faded-green:#ade792;--green:#6eccaf;--dark-green:#3d5656;--dark-blue:#344d67;--sand:#f3ecb0;--teal:#00abb3;--space:#eaeaea}body,html{height:100%}body{margin:0;font-family:Roboto,Helvetica Neue,sans-serif}</style><link rel="stylesheet" href="styles.e37c418058cb54fda1ea.css" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="styles.e37c418058cb54fda1ea.css"></noscript></head>
 <body class="mat-typography">
   <app-root></app-root>
-<script src="runtime.ef1b9728b561638e91d3.js" defer></script><script src="polyfills.4d3d98d35f192565e246.js" defer></script><script src="main.b478bb749bc61b06b592.js" defer></script>
+<script src="runtime.ef1b9728b561638e91d3.js" defer></script><script src="polyfills.4d3d98d35f192565e246.js" defer></script><script src="main.59955b1c819bd0d1f1ba.js" defer></script>
 
 
 </body></html>
