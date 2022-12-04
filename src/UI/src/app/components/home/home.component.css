@@ -1,0 +1,49 @@
+#container{
+  display: grid;
+  column-gap: 4rem;
+  row-gap: 3rem;
+  grid-template-columns: auto auto;
+  grid-auto-columns: 40%;
+  margin: 1rem 3rem 1rem 3rem;
+  height: 80%;
+
+}
+#calculate{
+  color: white;
+  font-size: 16px;
+  border: none;
+  background-color: var(--dark-blue);
+  cursor: pointer;
+  transition: all 0.2s ease-out;
+  width: 40%;
+  height: 30%;
+  border-radius: 25px;
+}
+#calculate:hover{
+  transition: all 0.2s ease-in;
+  background-color: var(--green);
+}
+.grid-item{
+  background-color: var(--space);
+  border-radius: 25px;
+  opacity: 0.9;
+  box-shadow:0px 0px 5px rgb(228, 228, 228);
+}
+#calc-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+textarea{
+  grid-area: 1 / 1 / span 2 / span 1;
+}
+.upload{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#upload-btn{
+  margin-top: 1rem;
+}
