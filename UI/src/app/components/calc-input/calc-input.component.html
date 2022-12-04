@@ -1,0 +1,15 @@
+<div id="header"><button mat-button (click)="back()">חזור לדף הבית</button></div>
+<div id="container" [@fadeIn]="{value: ':enter',params:{time:'500ms'}}" >
+  <app-calc-result [textPreds]="textPreds"></app-calc-result>
+  <div id="input-container" >
+    <textarea  dir="rtl" placeholder="הכנס טקסט"></textarea>
+    <button mat-button class="big-button"  (click)="calc()">חשב</button>
+    <button mat-button class="big-button" >
+      <span> (.txt) העלה קובץ טקסט</span>
+    </button>
+
+
+
+  </div>
+
+</div>

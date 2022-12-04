@@ -1,0 +1,16 @@
+<div id="welcome-container" >
+  <div id="main-welcome"  [@fadeIn]="{value: ':enter',params:{time:'800ms'}}">
+    <img src="assets/logo.png" alt="">
+    <span id="welcome-title"> ברוכים הבאים</span>
+  </div>
+  <button (click)="calc()" mat-button  id="grid-item-3" class="grid-item"
+  [@fadeIn]="{value: ':enter',params:{time:'1200ms'}}"
+  >
+    <i class="bi bi-caret-left-fill" ></i>
+    <span> חשב</span>
+
+  </button>
+  <img class="grid-item planet-img"  [@fadeIn]="{value: ':enter',params:{time:'1600ms'}}" src="assets/planet.jpg" alt="">
+
+</div>
+
