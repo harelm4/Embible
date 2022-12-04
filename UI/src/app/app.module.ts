@@ -14,6 +14,7 @@ import { MatTooltipModule } from '@angular/material/tooltip';
 import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 import { CalcInputComponent } from './components/calc-input/calc-input.component';
+import { FormsModule } from '@angular/forms';
 @NgModule({
   declarations: [
     AppComponent,
@@ -28,6 +29,7 @@ import { CalcInputComponent } from './components/calc-input/calc-input.component
     BrowserAnimationsModule,
     AppRoutingModule,
     HttpClientModule,
+    FormsModule,
     MatTabsModule,
     MatTooltipModule,
     MatCardModule,

@@ -1,5 +1,5 @@
 
-from flask import Flask, render_template,jsonify
+from flask import Flask, request,jsonify
 from flask_cors import CORS
 import webbrowser
 
@@ -11,9 +11,11 @@ CORS(app)
 # def hello_world():
 #     return render_template('index.html')
 
-@app.route("/mock",methods=['GET'])
-def mock():
+@app.route("/calc",methods=['GET'])
+def calc():
+    args = request.args.to_dict()
+    text=args['text']
     m=Model()
-    return jsonify(m.getMock())
+    return jsonify(m.calc(text))
 
 app.run(host="localhost", port=8000,debug=True,)

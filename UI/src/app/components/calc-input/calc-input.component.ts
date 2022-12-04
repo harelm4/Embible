@@ -12,6 +12,7 @@ import { ITextPrediction } from 'src/interfaces/icalc-result';
 })
 export class CalcInputComponent implements OnInit {
   textPreds: ITextPrediction[] | undefined;
+  inputText: string = '';
   constructor(public router: Router, private apiService: ApiService) {}
 
   ngOnInit(): void {}
@@ -19,7 +20,7 @@ export class CalcInputComponent implements OnInit {
     this.router.navigate(['']);
   }
   calc() {
-    this.apiService.mock().subscribe({
+    this.apiService.calc(this.inputText).subscribe({
       next: (res: ITextPrediction[]) => {
         this.textPreds = res;
       },
