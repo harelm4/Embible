@@ -4,8 +4,9 @@
   <div id="input-container" >
     <textarea [(ngModel)]="inputText"  dir="rtl" placeholder="הכנס טקסט"></textarea>
     <button mat-button class="big-button"  (click)="calc()">חשב</button>
-    <button mat-button class="big-button" >
-      <span> (.txt) העלה קובץ טקסט</span>
+    <button mat-button class="big-button" (click)="fileInput.click()" >
+      <input id="file-input" type="file" (change)="onFileSelected($event)" #fileInput />
+      (.txt) העלה קובץ טקסט
     </button>
 
 

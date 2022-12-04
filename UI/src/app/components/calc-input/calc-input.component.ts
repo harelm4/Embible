@@ -13,6 +13,7 @@ import { ITextPrediction } from 'src/interfaces/icalc-result';
 export class CalcInputComponent implements OnInit {
   textPreds: ITextPrediction[] | undefined;
   inputText: string = '';
+  loading: boolean = false;
   constructor(public router: Router, private apiService: ApiService) {}
 
   ngOnInit(): void {}
@@ -25,5 +26,19 @@ export class CalcInputComponent implements OnInit {
         this.textPreds = res;
       },
     });
+  }
+  onFileSelected(event: Event) {
+    this.loading = true;
+    const element = event.currentTarget as HTMLInputElement;
+    let fileList: FileList | null = element.files;
+    const file: File = fileList?.item(0)!;
+    if (fileList && fileList.item(0)?.type == 'text/plain') {
+      const reader = new FileReader();
+      reader.onload = e => {
+        this.inputText = reader.result?.toString().trim() ?? 'reading problem';
+        this.loading = false;
+      };
+      reader.readAsText(file);
+    }
   }
 }
