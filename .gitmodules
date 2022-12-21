@@ -1,0 +1,6 @@
+[submodule "Embible-Backend"]
+	path = Embible-Backend
+	url = https://github.com/harelm4/Embible-Backend.git
+[submodule "Embible-UI"]
+	path = Embible-UI
+	url = https://github.com/harelm4/Embible-UI.git
