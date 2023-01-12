@@ -8,19 +8,18 @@ We trained all the models for: 10,20 and 50 epochs with trying different paramet
 
 | First Header  | Second Header | Second Header |Second Header |Second Header |
 | ------------- | ------------- |------------- |------------- |-------------  |
-| DistilBert  | Content Cell  |Content Cell  |Content Cell  |Content Cell   |
-| DistilBert  | Content Cell  |Content Cell  |Content Cell  |Content Cell   |
-| DistilBert  | Content Cell  |Content Cell  |Content Cell  |Content Cell   |
-| DistilBert  | Content Cell  |Content Cell  |Content Cell  |Content Cell   |
-| Mbert | Content Cell  |Content Cell  |Content Cell  |Content Cell   |
-| Mbert  | Content Cell  |Content Cell  |Content Cell  |Content Cell   |
-| Mbert  | Content Cell  |Content Cell  |Content Cell  |Content Cell   |
-| tavBert  | Content Cell  |Content Cell  |Content Cell  |Content Cell   |
-| tavBert  | Content Cell  |Content Cell  |Content Cell  |Content Cell   |
-| tavBert  | Content Cell  |Content Cell  |Content Cell  |Content Cell   |
-| Aleph-Bert-gimel  | Content Cell  |Content Cell  |Content Cell  |Content Cell   |
-| Aleph-Bert-gimel  | Content Cell  |Content Cell  |Content Cell  |Content Cell   |
-| Aleph-Bert-gimel  | Content Cell  |Content Cell  |Content Cell  |Content Cell   |
+| DistilBert  | 10  |0.0002  |32  |0.01    |
+| DistilBert  | 20  |0.0002  |32  |0.01    |
+| DistilBert  | 50  |0.0002  |32  |0.01    |
+| Mbert | 10  |0.000002  |16  |Content Cell   |
+| Mbert  | 20  |0.000002  |16  |Content Cell   |
+| Mbert  | 50  |0.000002  |16  |Content Cell   |
+| tavBert  | 10  |0.000002  |32  |Content Cell   |
+| tavBert  | 20  |0.000002  |32  |Content Cell   |
+| tavBert  | 50  |0.000002  |32  |Content Cell   |
+| Aleph-Bert-gimel  | 10  |0.000002  |16 |Content Cell   |
+| Aleph-Bert-gimel  | 20  |0.000002  |16  |Content Cell   |
+| Aleph-Bert-gimel  | 50 |0.000002  |16  |Content Cell   |
 
 
 <!-- TABLE_GENERATE_END -->
