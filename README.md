@@ -8,8 +8,19 @@ We trained all the models for: 10,20 and 50 epochs with trying different paramet
 
 | First Header  | Second Header | Second Header |Second Header |Second Header |
 | ------------- | ------------- |------------- |------------- |-------------  |
-| Content Cell  | Content Cell  |Content Cell  |Content Cell  |Content Cell   |
-| Content Cell  | Content Cell  |Content Cell  |Content Cell  |Content Cell   |
+| DistilBert  | Content Cell  |Content Cell  |Content Cell  |Content Cell   |
+| DistilBert  | Content Cell  |Content Cell  |Content Cell  |Content Cell   |
+| DistilBert  | Content Cell  |Content Cell  |Content Cell  |Content Cell   |
+| DistilBert  | Content Cell  |Content Cell  |Content Cell  |Content Cell   |
+| Mbert | Content Cell  |Content Cell  |Content Cell  |Content Cell   |
+| Mbert  | Content Cell  |Content Cell  |Content Cell  |Content Cell   |
+| Mbert  | Content Cell  |Content Cell  |Content Cell  |Content Cell   |
+| tavBert  | Content Cell  |Content Cell  |Content Cell  |Content Cell   |
+| tavBert  | Content Cell  |Content Cell  |Content Cell  |Content Cell   |
+| tavBert  | Content Cell  |Content Cell  |Content Cell  |Content Cell   |
+| Aleph-Bert-gimel  | Content Cell  |Content Cell  |Content Cell  |Content Cell   |
+| Aleph-Bert-gimel  | Content Cell  |Content Cell  |Content Cell  |Content Cell   |
+| Aleph-Bert-gimel  | Content Cell  |Content Cell  |Content Cell  |Content Cell   |
 
 
 <!-- TABLE_GENERATE_END -->
