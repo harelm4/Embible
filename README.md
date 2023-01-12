@@ -24,3 +24,4 @@ We trained all the models for: 10,20 and 50 epochs with trying different paramet
 
 <!-- TABLE_GENERATE_END -->
 
+In addition to check the loss on the validation set, We tested on it set 4 different matrics: accuracy, precision, F1, recall.
