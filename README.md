@@ -6,6 +6,11 @@ We trained all the models for: 10,20 and 50 epochs with trying different paramet
 
 <!-- TABLE_GENERATE_START -->
 
+| First Header  | Second Header | Second Header |Second Header |Second Header |
+| ------------- | ------------- |
+| Content Cell  | Content Cell  |Content Cell  |Content Cell  |Content Cell  |
+| Content Cell  | Content Cell  |Content Cell  |Content Cell  |Content Cell  |
+
 | Models  | Epochs | Learning_Rate| Batch_Size | Weight_decay|
 | ------------- | ------------- | ------------- | ------------- |
 |DistilBert  | 10| 0.0002       | 32           |0.01         |
