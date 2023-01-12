@@ -6,10 +6,20 @@ We trained all the models for: 10,20 and 50 epochs with trying different paramet
 
 <!-- TABLE_GENERATE_START -->
 
-| First Header  | Second Header |
+| Models  | Second Header |
 | ------------- | ------------- |
-| Content Cell  | Content Cell  |
-| Content Cell  | Content Cell  |
+|DistilBert  
+|DistilBert  |
+|DistilBert  |
+|Mbert       |
+|Mbert       |
+|Mbert       |
+|tavBert     |
+|tavBert     |
+|tavBert     |
+|Aleph-Bert-gimel |
+|Aleph-Bert-gimel |
+|Aleph-Bert-gimel |
 
 <!-- TABLE_GENERATE_END -->
 
