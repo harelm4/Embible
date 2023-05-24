@@ -1,27 +1,19 @@
 # Embible
 
-## Analyze The Results For Fine-Tuning To several Bert models.
+Project Summary:
+In recent years we have witnessed an increase in ancient archaeological findings related to the Jewish nation. These findings are important for strengthening the identity, connection to culture, and history of the Jewish people.
 
-We trained all the models for: 10,20 and 50 epochs with trying different parameters: batch size, learning rate, weight decay
+Among these findings, a lot of the writings have been torn/faded over the years .
+The model we are developing in our project aims to solve a masked language modeling (MLM) problem - completing missing (masked) sections in text. There may be several options for a missing section: missing words, a single word missing, a single letter missing or partial word. 
 
-<!-- TABLE_GENERATE_START -->
+After reviewing a number of articles in the field and investigating the advantages and disadvantages of each model , we reached several conclusions: 
+The disadvantage of these models is that most of them are good at predicting in the  English language and other languages they have been trained on (for example: Greek), but are not good at predicting in the Hebrew language.
 
-| First Header  | Second Header | Second Header |Second Header |Second Header |
-| ------------- | ------------- |------------- |------------- |-------------  |
-| DistilBert  | 10  |0.0002  |32  |0.01    |
-| DistilBert  | 20  |0.0002  |32  |0.01    |
-| DistilBert  | 50  |0.0002  |32  |0.01    |
-| Mbert | 10  |0.000002  |16  |0.1   |
-| Mbert  | 20  |0.000002  |16  |0.1   |
-| Mbert  | 50  |0.000002  |16  |0.1  |
-| tavBert  | 10  |0.000002  |32  |0.01   |
-| tavBert  | 20  |0.000002  |32  |0.01   |
-| tavBert  | 50  |0.000002  |32  |0.01   |
-| Aleph-Bert-gimel  | 10  |0.000002  |16 |0.01  |
-| Aleph-Bert-gimel  | 20  |0.000002  |16  |0.01   |
-| Aleph-Bert-gimel  | 50 |0.000002  |16  |0.01  |
+There are models that predict whole missing words very well but predict worse for partial words that are missing, and vice versa.
+Therefore, we developed an ensemble model trained using the Bible that takes the advantage of a model that knows how to predict whole missing words well and an advantage of a model that predicts partial missing words well. (The models on which our model is based, are models that we performed fine tuning on to improve their predictions).
 
+During the research, we implemented metrics to evaluate and measure the quality of the prediction while checking for a different percentage of masked parts in text.
+The model is a part of a system. A user will enter text with missing parts into the system. For the missing parts, the system will return several options, each option has a probability of completing the hidden part.
 
-<!-- TABLE_GENERATE_END -->
+This is how we will help historians whose goal is to restore ancient Jewish scrolls and writings as their life's mission.
 
-In addition to check the loss on the validation set, We tested on it set 4 different matrics: accuracy, precision, F1, recall.
