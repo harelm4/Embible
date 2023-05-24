@@ -17,5 +17,5 @@ The model is a part of a system. A user will enter text with missing parts into 
 This is how we will help historians whose goal is to restore ancient Jewish scrolls and writings as their life's mission.
 
 
-![alt text][(http://url/to/img.png](https://www.google.com/url?sa=i&url=https%3A%2F%2Fdeadsea.com%2Fhe%2F%25D7%259E%25D7%2590%25D7%259E%25D7%25A8%25D7%2599%25D7%259D-%25D7%2595%25D7%2598%25D7%2599%25D7%25A4%25D7%2599%25D7%259D%2F%25D7%2594%25D7%2599%25D7%25A1%25D7%2598%25D7%2595%25D7%25A8%25D7%2599%25D7%2594%2F%25D7%259E%25D7%2594%25D7%259F-%25D7%259E%25D7%2592%25D7%2599%25D7%259C%25D7%2595%25D7%25AA-%25D7%2599%25D7%259D-%25D7%2594%25D7%259E%25D7%259C%25D7%2597-%25D7%259C%25D7%259E%25D7%2593%25D7%2595-%25D7%25A2%25D7%2595%25D7%2593-%25D7%25A2%25D7%259C-%25D7%259E%25D7%2592%25D7%2599%25D7%259C%25D7%2595%25D7%25AA-%25D7%25A7%2F&psig=AOvVaw2v0MBxvIqUzDNf9D8FzJ3A&ust=1685051458723000&source=images&cd=vfe&ved=0CBEQjRxqFwoTCOD0tYD4jv8CFQAAAAAdAAAAABAD))
+![image](https://github.com/harelm4/Embible/assets/96492687/830521d4-ff58-4e27-b534-5d3cad8de02a)
 
